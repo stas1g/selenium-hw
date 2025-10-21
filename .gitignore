@@ -1,18 +1,17 @@
-.gradle
+cat > .gitignore <<EOF
+.gradle/
 build/
-!gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
+!.gitkeep
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+.idea/
 *.iml
-*.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
+
+# Logs
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+EOF
 
